@@ -1,0 +1,241 @@
+/** Global **/
+img {
+  max-width: 100%;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #ccd5de;
+  z-index: 999;
+}
+
+/** Navigation **/
+.menu {
+  height: auto; 
+  width: 100%;
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+
+  -webkit-transition:all .3s ease-in;  
+  -moz-transition:all.3s ease-in;  
+  -o-transition:all .3s ease-in;  
+  transition:all .3s ease-in; 
+
+  -webkit-transition:all .3s ease-out;  
+  -moz-transition:all.3s ease-out;  
+  -o-transition:all .3s ease-out;  
+  transition:all .3s ease-out; 
+}
+.menu.fixed {
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+.menu-inner {
+  position: relative;
+}
+#nav {
+  text-align: right;
+  margin: 0px 0 0 0;
+  height: 85px;
+}
+.navigation {
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+.navigation li{
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  float: left;
+  padding: 34px 0 34px 40px;
+  text-transform: uppercase;
+  transition:.3s;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+}
+.navigation li:hover{
+  cursor:pointer;
+  color: #fff;
+  transition:.3s;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+}
+.navigation .active{
+  cursor: pointer;
+  color: #fff;
+  transition:.8s;
+  -o-transition:.8s;
+  -ms-transition:.8s;
+  -moz-transition:.8s;
+  -webkit-transition:.8s;
+}
+@media (max-width: 880px) {
+  .navigation li {
+    padding: 34px 0 20px 20px;
+  }
+}
+
+/** WD 1 **/ 
+#wd1 {
+  background: #fff url('../img/wd1-bg.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  #wd1 {
+    background-attachment: scroll !important;
+  }
+}
+@media (max-width: 480px) {
+  #wd1 {
+    background: #fff url('../img/wd1-bg-mobile.jpg') no-repeat 50% 0;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+  }
+}
+.on-center {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: auto;
+  height: 300px;
+  overflow: hidden;
+}
+#center-content h1 {
+  color: #fff;
+  margin: 5px 0 3px 0;
+  text-transform: uppercase;
+  padding: 0;
+}
+#center-content h3 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  padding: 0;
+  font-weight: 400;
+}
+#center-content #play-button {
+  display: inline-block;
+  width: 92px;
+  height: 92px;
+  background: url(../img/play-button-sm.png) no-repeat;
+  background-size: 92px 92px;
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+}
+#center-content #play-button:hover {
+  background: url(../img/play-button-sm-hover.png) no-repeat;
+  background-size: 92px 92px;
+}
+/* CSS for high-resolution devices and res under 691 */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5) and (max-width: 690px),
+only screen and (-moz-min-device-pixel-ratio: 1.5) and (max-width: 690px),
+only screen and (-o-min-device-pixel-ratio: 3/2) and (max-width: 690px),
+only screen and (min-device-pixel-ratio: 1.5) and (max-width: 690px) {
+  #center-content #play-button {
+    background: url(../img/play-button.png) no-repeat center center;
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+  }
+  #center-content #play-button:hover {
+    background: url(../img/play-button.png) no-repeat center center;
+    background-size: 70px 70px;
+  }
+}
+/* CSS for high-resolution devices and res over 690 */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5) and (min-width: 691px),
+only screen and (-moz-min-device-pixel-ratio: 1.5) and (min-width: 691px),
+only screen and (-o-min-device-pixel-ratio: 3/2) and (min-width: 691px),
+only screen and (min-device-pixel-ratio: 1.5) and (min-width: 691px) {
+  #center-content #play-button {
+    background: url(../img/play-button.png) no-repeat center center;
+    background-size: 92px 92px;
+    width: 92px;
+    height: 92px;
+  }
+  #center-content #play-button:hover {
+    background: url(../img/play-button-hover.png) no-repeat center center;
+    background-size: 92px 92px;
+  }
+}
+h1 span {
+  color: #5cb7e6;
+}
+@media (max-width: 950px) {
+  .on-center {
+    height: 230px;
+  }
+}
+@media (max-width: 750px) {
+  .on-center {
+    height: 230px;
+  }
+}
+@media (max-width: 480px) {
+  #center-content h1 {
+    padding: 0 20px;
+  }
+  #center-content h3 {
+    padding: 0 20px;
+    font-size: 12px;
+  }
+  .on-center {
+    height: 290px;
+  }
+}
+#down-arrow-container {
+  display: none;
+  width: 50px;
+  height: 17px;
+  position: absolute;
+  left: 50%;
+  bottom: 17%;
+  margin: 0 0 0 -25px;
+  float: none;
+  z-index: 99999;
+  background: url('../img/arrow-down.png') no-repeat center center;
+  background-size: 50px 17px;
+  cursor: pointer;
+
+  -webkit-transition:all .3s ease-in;  
+  -moz-transition:all.3s ease-in;
+  -o-transition:all .3s ease-in;  
+  transition:all .3s ease-in; 
+
+  -webkit-transition:all .3s ease-out;  
+  -moz-transition:all.3s ease-out;  
+  -o-transition:all .3s ease-out;  
+  transition:all .3s ease-out; 
+}
+#down-arrow-container:hover {
+  background: url('../images/arrow-down-hover.png') no-repeat center center;
+  background-size: 50px 17px;
+}

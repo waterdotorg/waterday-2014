@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block menu_upper %}
+    <div id="overlay"></div>
+    <div id="video-container"></div>
+    <div id="video-controls">
+        <span class="glyphicon glyphicon-remove" id="close-video"></span>
+    </div>
+    <div id="wd1" class="slide-section destination" page-slide="1" data-stellar-background-ratio="0.5">
+        <div class="container-fluid">
+            <div id="center-control" class="on-center destination-up" page-slide="1">
+                <div id="center-content">
+                    <h1 class="sz-headline">Celebrating The Best Days<span>.</span></h1>
+                    <h3 class="sz-description">World Water Day 2014</h3>
+                    <a id="play-button" class="pound" href="#"><span></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block main %}
+<!-- down button -->
+<div class="container">
+    <div id="down-arrow-container" class="slide-link" page-slide="2"></div>
+</div>
+
+<div class="slide-section destination" id="about" page-slide="2">
+    <div class="container">
+        <div id="content" class="destination-up" page-slide="2">
+            <h2 class="sz-headline">Water Day 2014</h2>
+            <p class="sz-content">
+            In honor of Water Day 2014 we're celebrating what could be the best
+            day of someone's life &ndash; the day they get safe water. More than 780
+            million people around the world don't have access to it.
+            </p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
