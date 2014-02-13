@@ -20,6 +20,7 @@ img {
 
 /** Menu **/
 .menu {
+  background-color: #ebebeb;
   height: auto; 
   width: 100%;
   -webkit-box-sizing: initial;
@@ -44,6 +45,10 @@ img {
 .menu-inner {
   position: relative;
 }
+#logo {
+  display: block;
+  margin: 25px 0 0 0;
+}
 #nav {
   text-align: right;
   margin: 0px 0 0 0;
@@ -55,6 +60,7 @@ img {
   margin: 0;
 }
 .navigation li{
+  color: #707070;
   font-size: 16px;
   float: left;
   padding: 34px 0 34px 40px;
@@ -67,7 +73,7 @@ img {
 }
 .navigation li:hover{
   cursor:pointer;
-  color: #fff;
+  color: #707070;
   transition:.3s;
   -o-transition:.3s;
   -ms-transition:.3s;
@@ -91,15 +97,14 @@ img {
 
 /* Mobile Menu */
 .menu-mobile {
+  background-color: #ebebeb;
   display: none;
   height: 50px;
-  background: #2a2a2a;
   text-align: center;
   z-index: 999999;
   position: fixed;
   bottom: 0;
   width: 100%;
-  color: #fff;
   padding: 0;
   overflow: hidden;
 }
@@ -132,20 +137,18 @@ img {
   height: 25px;
 }
 #connect-bar img {
-  width: 97px;
-  height: 20px;
+  width: 100px;
+  height: 29px;
   margin-top: 15px;
 }
 #connect-content a {
+  color: #707070;
   display:  block;
   padding: 10px;
   text-align: center;
-  color: #fff;
-  border-bottom: solid 1px #555;
-  font-size: 13px;
+  border-bottom: solid 1px #f3f3f3;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 1px;
-  border-bottom: solid 1px #393939;
   text-transform: uppercase;
 }
 #connect-content a:hover {
@@ -186,104 +189,27 @@ img {
 .sz-headline {
   font-size: 40px;
   line-height: 50px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-weight: 700;
 }
 .sz-description {
-  letter-spacing: 2px;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 1.2em;
 }
 .sz-content {
   letter-spacing: 1px;
   font-size: 15px;
   line-height: 30px;
 }
-@media (min-width: 1920px) {
-  .sz-headline {
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  .sz-description {
-    letter-spacing: 2px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .sz-content {
-    letter-spacing: 1px;
-    font-size: 15px;
-    line-height: 30px;
-  }
-}
-@media (min-width: 2500px) {
-  .sz-headline {
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  .sz-description {
-    letter-spacing: 2px;
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .sz-content {
-    letter-spacing: 1px;
-    font-size: 15px;
-    line-height: 30px;
-  }
-}
-@media (max-width: 950px) {
+@media (max-width: 979px) {
   .sz-headline {
     font-size: 35px;
     line-height: 45px;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  .sz-description {
-    letter-spacing: 2px;
-    font-size: 13px;
-    line-height: 20px;
-  }
-  .sz-content {
-    font-size: 13px;
-    line-height: 23px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 767px) {
   .sz-headline {
     font-size: 25px;
     line-height: 35px;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  .sz-description {
-    letter-spacing: 2px;
-    font-size: 13px;
-    line-height: 20px;
-  }
-  .sz-content {
-    font-size: 13px;
-    line-height: 23px;
-  }
-}
-@media (max-width: 600px) {
-  .sz-headline {
-    font-size: 25px;
-    line-height: 35px;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  .sz-description {
-    letter-spacing: 2px;
-    font-size: 13px;
-    line-height: 20px;
-  }
-  .sz-content {
-    font-size: 13px;
-    line-height: 23px;
   }
 }
 
@@ -366,14 +292,13 @@ img {
   color: #fff;
   margin: 5px 0 3px 0;
   text-transform: uppercase;
-  padding: 0;
+  padding: 0 0 10px 0;
 }
 #center-content h3 {
   color: #fff;
-  text-transform: uppercase;
   margin: 0 0 40px 0;
   padding: 0;
-  font-weight: 400;
+  font-weight: normal;
 }
 #center-content #play-button {
   display: inline-block;
@@ -428,12 +353,7 @@ h1 span {
 }
 @media (max-width: 950px) {
   .on-center {
-    height: 230px;
-  }
-}
-@media (max-width: 750px) {
-  .on-center {
-    height: 230px;
+    height: 250px;
   }
 }
 @media (max-width: 480px) {
