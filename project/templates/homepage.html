@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block menu_upper %}
     <div id="overlay"></div>
@@ -25,17 +26,62 @@
     <div id="down-arrow-container" class="slide-link" page-slide="2"></div>
 </div>
 
-<div class="slide-section destination" id="about" page-slide="2">
+<div id="about" class="slide-section destination" page-slide="2">
     <div class="container">
-        <div id="content" class="destination-up" page-slide="2">
-            <h2 class="sz-headline">Water Day 2014</h2>
+        <div class="content" class="destination-up" page-slide="2">
+            <h1 class="sz-headline-intro">Give Someone Their</h1>
+            <h2 class="sz-headline">Water Day</h2>
             <p class="sz-content">
-            In honor of Water Day 2014 we're celebrating what could be the best
-            day of someone's life &ndash; the day they get safe water. More than 780
-            million people around the world don't have access to it.
+            More than 780 million people around the world lack access to safe water. This means millions of women cannot contribute to the prosperity of their communities because their time is spent finding water; their children are not going to school because they too must collect water; and a child is dying every 21 seconds due to a water-related disease.
+            </p>
+            <p class="sz-content">
+            In honor of Water Day 2014 we're celebrating one of the best days of someone's life &ndash; the day they get access to safe water. 
+            </p>
+            <p class="sz-content">
+            For $25.00 you can give someone their water day.
+            </p>
+            <p>
+                <a class="btn btn-default btn-blue" href="https://contribute.water.org/donate/waterday/">Give Someone Their Water Day</a>
             </p>
         </div>
 
+    </div>
+</div>
+
+<div id="work" class="slide-section destination" page-slide="3">
+    <div class="clearfix destination-up" page-slide="3">
+        <div class="gallery-item">
+            <div class="gallery-info">
+                <label>Steph Goralnick</label>
+                <div class="copy">View Steph's field visit to Kenya on Instagram.</div>
+                <div class="view"><a target="_blank" href="http://instagram.com/sgoralnick/">View</a></div>
+            </div>
+            <img src="{% static "img/profile1.jpg" %}" />
+        </div>
+        <div class="gallery-item">
+            <div class="gallery-info">
+                <label>Benjamin Heath</label>
+                <div class="copy">View Benjamin's field visit to Kenya on Instagram.</div>
+                <div class="view"><a target="_blank" href="http://instagram.com/benjaminheath/">View</a></div>
+            </div>
+            <img src="{% static "img/profile2.jpg" %}" />
+        </div>
+        <div class="gallery-item">
+            <div class="gallery-info">
+                <label>Simone Bramante</label>
+                <div class="copy">View Simone's field visit to Kenya on Instagram.</div>
+                <div class="view"><a target="_blank" href="http://instagram.com/brahmino/">View</a></div>
+            </div>
+            <img src="{% static "img/profile3.jpg" %}" />
+        </div>
+        <div class="gallery-item">
+            <div class="gallery-info">
+                <label>Water.org</label>
+                <div class="copy"></div>
+                <div class="view"><a target="_blank" href="http://water.org/">View</a></div>
+            </div>
+            <img src="{% static "img/profile4.jpg" %}" />
+        </div>
     </div>
 </div>
 {% endblock %}

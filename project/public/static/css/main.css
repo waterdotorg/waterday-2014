@@ -17,10 +17,18 @@ img {
   background: #ccd5de;
   z-index: 999;
 }
+.btn-blue, .btn-blue:visited {
+    border-top: 1px solid rgba(255,255,255,0.6);
+    background-color: #63b1e5;
+}
+.btn-blue:hover {
+    background-color: #00C7FF;
+}
 
 /** Menu **/
 .menu {
   background-color: #ebebeb;
+  border-bottom: 1px solid #cdcdcd;
   height: auto; 
   width: 100%;
   -webkit-box-sizing: initial;
@@ -63,7 +71,7 @@ img {
   color: #707070;
   font-size: 16px;
   float: left;
-  padding: 34px 0 34px 40px;
+  padding: 30px 0 30px 40px;
   text-transform: uppercase;
   transition:.3s;
   -o-transition:.3s;
@@ -178,6 +186,42 @@ img {
     padding: 60px 0;
   }
 }
+.slide-section .content { 
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .slide-section .content {
+    margin: 0 auto;
+    width: 750px;
+  }
+}
+.sz-headline-intro {
+  color: #919195;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.sz-headline {
+  font-size: 30px;
+  line-height: 1.2em;
+  font-weight: 700;
+  margin: 15px 0 50px 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.sz-description {
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.sz-content {
+}
+@media (max-width: 767px) {
+  .sz-headline {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
 
 /* General Styles */
 .upper {
@@ -185,32 +229,6 @@ img {
 }
 .noupper {
   text-transform: none;
-}
-.sz-headline {
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 700;
-}
-.sz-description {
-  font-size: 14px;
-  line-height: 1.2em;
-}
-.sz-content {
-  letter-spacing: 1px;
-  font-size: 15px;
-  line-height: 30px;
-}
-@media (max-width: 979px) {
-  .sz-headline {
-    font-size: 35px;
-    line-height: 45px;
-  }
-}
-@media (max-width: 767px) {
-  .sz-headline {
-    font-size: 25px;
-    line-height: 35px;
-  }
 }
 
 /* VIDEO */
@@ -395,4 +413,9 @@ h1 span {
 #down-arrow-container:hover {
   background: url('../images/arrow-down-hover.png') no-repeat center center;
   background-size: 50px 17px;
+}
+#main-donate {
+  display: block;
+  font-weight: 700;
+  margin: 50px 0;
 }
