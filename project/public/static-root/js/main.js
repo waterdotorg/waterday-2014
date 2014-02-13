@@ -136,7 +136,7 @@ $(document).ready(function() {
     $('#play-button').click(function(e) {
 	e.preventDefault();
 	var videoContainer = $('#video-container');
-	videoContainer.prepend('<iframe src="//www.youtube.com/embed/UpUWtMYqikc?list=PLHsErFFuTfjaEFGGiLBQQ5CFPuj7YZaYj&autoplay=1&autohide=1&modestbranding=1&rel=0" width="560" height="316" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+	videoContainer.prepend('<iframe src="//www.youtube.com/embed/UpUWtMYqikc?list=PLHsErFFuTfjaEFGGiLBQQ5CFPuj7YZaYj&autoplay=1&autohide=1&modestbranding=1&rel=0&wmode=opaque" width="560" height="316" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 	resizeToCover();
 	videoContainer.css({'z-index':'9999','background':'#101010'}).fadeIn(300);
 	$('#video-controls').fadeIn(900);
