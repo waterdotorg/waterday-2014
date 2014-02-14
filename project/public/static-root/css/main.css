@@ -176,14 +176,14 @@ img {
   width: 100%;
   height: auto;
   position: relative;
-  padding: 120px 0;
+  padding-top: 50px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 @media (max-width: 480px) {
   .slide-section {
-    padding: 60px 0;
+    padding-top: 25px;
   }
 }
 .slide-section .content { 
@@ -220,6 +220,14 @@ img {
   .sz-headline {
     font-size: 25px;
     line-height: 35px;
+  }
+}
+.slide-section .content p {
+  padding-bottom: 45px;
+}
+@media (max-width: 767px) {
+  .slide-section .content p {
+    padding-bottom: 25px;
   }
 }
 
@@ -415,7 +423,110 @@ h1 span {
   background-size: 50px 17px;
 }
 #main-donate {
-  display: block;
+  color: #ffffff;
+  font-size: 30px;
   font-weight: 700;
-  margin: 50px 0;
+  letter-spacing: -1px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+/** WD 2 **/
+#work {
+  padding:0;
+}
+#work .gallery-item {
+  position: relative;
+  margin: 0 !important;
+  width: 50%;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  background: #333333;
+}
+#work .gallery-item img {
+  width: auto;
+  height: auto;
+}
+#work .gallery-info {
+  display: none;
+  position: absolute;
+  text-align: center;
+  height: 300px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0 10%;
+  margin: auto;
+  z-index: 99;
+}
+#work .gallery-info label {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 30px 0;
+  padding: 0 0 55px 0;
+  letter-spacing: 2px;
+}
+#work .gallery-info .copy {
+  color: #fff;
+  margin: 0 0 30px 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+#work .gallery-info .action {
+  display: block;
+  padding: 20px 0 0 0;
+}
+#work .gallery-info a {
+  width: 100px;
+  border-bottom: solid 7px #5cb7e6;
+  font-weight: 700;
+  padding: 20px 35px;
+  margin: 20px 0 20px 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+#work .gallery-info a:hover {
+  border-bottom: solid 7px #fff;
+  color: #fff;
+  text-decoration: none;
+}
+@media (min-width: 2500px) {
+  #work .gallery-item img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1620px) {
+  #work .gallery-item {
+    width: 33.3%;
+  }
+}
+@media (max-width: 900px) {
+  #work .gallery-item {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #work .gallery-info {
+    padding: 0 20px;
+  }
+  #work .gallery-info label {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 20px 0;
+    padding: 0;
+    background: none;
+  }
+  #work .gallery-info .copy {
+    font-size: 12px;
+    line-height: 22px;
+  }
 }
