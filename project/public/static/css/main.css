@@ -564,3 +564,9 @@ h1 span {
     width: 100%;
     height: auto;
 }
+
+/** Footer **/
+.footer {
+  background-color: #ebebeb;
+  padding: 35px 0;
+}
