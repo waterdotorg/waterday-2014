@@ -20,9 +20,17 @@ img {
 .btn-blue, .btn-blue:visited {
     border-top: 1px solid rgba(255,255,255,0.6);
     background-color: #63b1e5;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  white-space: normal;
+
 }
 .btn-blue:hover {
     background-color: #00C7FF;
+    color: #fff;
 }
 
 /** Menu **/
@@ -423,17 +431,13 @@ h1 span {
   background-size: 50px 17px;
 }
 #main-donate {
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: -1px;
   margin-top: 5px;
-  text-transform: uppercase;
-  white-space: normal;
 }
 
 /** WD 2 **/
 #work {
+  margin: 0 auto;
+  max-width: 1700px;
   padding:0;
 }
 #work .gallery-item {
@@ -469,45 +473,41 @@ h1 span {
   text-transform: uppercase;
   color: #fff;
   margin: 0 0 30px 0;
-  padding: 0 0 55px 0;
+  padding: 0;
   letter-spacing: 2px;
 }
 #work .gallery-info .copy {
   color: #fff;
-  margin: 0 0 30px 0;
+  margin: 0;
   padding: 0;
   letter-spacing: 1px;
 }
 #work .gallery-info .action {
   display: block;
-  padding: 20px 0 0 0;
+  margin-bottom: 60px;
+  padding: 10px 0 0 0;
+}
+@media (max-width: 360px) {
+  #work .gallery-info .action {
+    margin-bottom: 0px; 
+  }
 }
 #work .gallery-info a {
-  width: 100px;
   border-bottom: solid 7px #5cb7e6;
-  font-weight: 700;
-  padding: 20px 35px;
-  margin: 20px 0 20px 0;
   color: #fff;
+  display: block;
+  font-weight: 700;
+  margin: 0 auto 30px;
+  padding: 10px 0;
   text-transform: uppercase;
+  width: 100px;
 }
 #work .gallery-info a:hover {
   border-bottom: solid 7px #fff;
-  color: #fff;
+  color: #5cb7e6;
   text-decoration: none;
 }
-@media (min-width: 2500px) {
-  #work .gallery-item img {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media (min-width: 1620px) {
-  #work .gallery-item {
-    width: 33.3%;
-  }
-}
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   #work .gallery-item {
     width: 100%;
   }
