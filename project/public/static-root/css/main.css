@@ -430,11 +430,13 @@ h1 span {
   background: url('../images/arrow-down-hover.png') no-repeat center center;
   background-size: 50px 17px;
 }
+
+/** WD 2 **/
 #main-donate {
   margin-top: 5px;
 }
 
-/** WD 2 **/
+/** WD 3 **/
 #work {
   margin: 0 auto;
   max-width: 1700px;
@@ -529,4 +531,36 @@ h1 span {
     font-size: 12px;
     line-height: 22px;
   }
+}
+
+/** WD 4 **/
+#share {
+  border-top: 10px solid #5cb7e6;
+  border-bottom: 10px solid #5cb7e6;
+
+}
+
+/** Instagram Images **/
+.instagram {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.instagram li {
+    float: left;
+    width: 10%;
+    -webkit-transition: opacity 0.05s linear;
+    -moz-transition: opacity 0.05s linear;
+    -ms-transition: opacity 0.05s linear;
+    -o-transition: opacity 0.05s linear;
+    transition: opacity 0.05s linear;
+}
+.instagram li:hover {
+    opacity: 0.8;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+}
+.instagram li img {
+    width: 100%;
+    height: auto;
 }
