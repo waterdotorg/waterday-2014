@@ -336,11 +336,9 @@ img {
   font-weight: normal;
 }
 #center-content #play-button {
-  display: inline-block;
-  width: 92px;
   height: 92px;
-  background: url(../img/play-button-sm.png) no-repeat;
-  background-size: 92px 92px;
+  width: 92px;
+  margin: 0 auto;
   -webkit-transition: background .2s ease-in-out;
   -moz-transition: background .2s ease-in-out;
   -ms-transition: background .2s ease-in-out;
@@ -351,37 +349,9 @@ img {
   background: url(../img/play-button-sm-hover.png) no-repeat;
   background-size: 92px 92px;
 }
-/* CSS for high-resolution devices and res under 691 */
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5) and (max-width: 690px),
-only screen and (-moz-min-device-pixel-ratio: 1.5) and (max-width: 690px),
-only screen and (-o-min-device-pixel-ratio: 3/2) and (max-width: 690px),
-only screen and (min-device-pixel-ratio: 1.5) and (max-width: 690px) {
-  #center-content #play-button {
-    background: url(../img/play-button.png) no-repeat center center;
-    background-size: 70px 70px;
-    width: 70px;
-    height: 70px;
-  }
-  #center-content #play-button:hover {
-    background: url(../img/play-button.png) no-repeat center center;
-    background-size: 70px 70px;
-  }
-}
-/* CSS for high-resolution devices and res over 690 */
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5) and (min-width: 691px),
-only screen and (-moz-min-device-pixel-ratio: 1.5) and (min-width: 691px),
-only screen and (-o-min-device-pixel-ratio: 3/2) and (min-width: 691px),
-only screen and (min-device-pixel-ratio: 1.5) and (min-width: 691px) {
-  #center-content #play-button {
-    background: url(../img/play-button.png) no-repeat center center;
-    background-size: 92px 92px;
-    width: 92px;
-    height: 92px;
-  }
-  #center-content #play-button:hover {
-    background: url(../img/play-button-hover.png) no-repeat center center;
-    background-size: 92px 92px;
-  }
+#center-content #play-button img {
+  max-width: 92px;
+  width: 92px; 
 }
 h1 span {
   color: #5cb7e6;
@@ -428,7 +398,7 @@ h1 span {
   transition:all .3s ease-out; 
 }
 #down-arrow-container:hover {
-  background: url('../images/arrow-down-hover.png') no-repeat center center;
+  background: url('../img/arrow-down-hover.png') no-repeat center center;
   background-size: 50px 17px;
 }
 
