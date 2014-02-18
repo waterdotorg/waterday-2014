@@ -345,10 +345,6 @@ img {
   -o-transition: background .2s ease-in-out;
   transition: background .2s ease-in-out;
 }
-#center-content #play-button:hover {
-  background: url(../img/play-button-sm-hover.png) no-repeat;
-  background-size: 92px 92px;
-}
 #center-content #play-button img {
   max-width: 92px;
   width: 92px; 
