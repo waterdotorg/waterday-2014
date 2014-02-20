@@ -1,0 +1,13 @@
+- symlink nginx.conf to /etc/nginx/sites-enabled/
+    - /etc/init.d/nginx reload
+
+- symlink supervisord/waterday_gunicorn.conf /etc/supervisord/
+    - reread and update
+
+- Complete these donation pages
+    - https://contribute.water.org/donate/waterday/
+    - https://contribute.water.org/donate/waterday-goralnick/
+    - https://contribute.water.org/donate/waterday-bramante/
+    - https://contribute.water.org/donate/waterday-heath/
+
+** Note - need minimum 10 images tagged on instagram to display gallery on homepage
