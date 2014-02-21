@@ -8,7 +8,7 @@ function isMobileTest() {
 }
 
 $(window).load(function() {
-    $("#overlay").delay(200).fadeOut(600);
+    $("#overlay").delay(200).fadeOut(200);
     $('#down-arrow-container').fadeIn(900).animate({bottom: "20%",}, 100, function() {});
 
     $(window).stellar({

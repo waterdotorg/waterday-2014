@@ -44,6 +44,7 @@ img {
   -moz-box-sizing: initial;
   box-sizing: initial;
 
+  /*
   -webkit-transition:all .3s ease-in;  
   -moz-transition:all.3s ease-in;  
   -o-transition:all .3s ease-in;  
@@ -53,6 +54,7 @@ img {
   -moz-transition:all.3s ease-out;  
   -o-transition:all .3s ease-out;  
   transition:all .3s ease-out; 
+  */
 }
 .menu.fixed {
   position: fixed;
