@@ -285,6 +285,34 @@ img {
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
+/** Gallery **/
+.gallery-item {
+  position: relative;
+  margin: 0 !important;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  background: #333333;
+}
+.gallery-item img {
+  width: auto;
+  height: auto;
+}
+.gallery-info {
+  display: none;
+  position: absolute;
+  text-align: center;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  padding: 0 10%;
+  margin: auto;
+  z-index: 99;
+}
+
 /** WD 1 **/ 
 #wd1 {
   background: #fff url('../img/wd1-bg.jpg') no-repeat;
@@ -412,31 +440,10 @@ h1 span {
   padding:0;
 }
 #work .gallery-item {
-  position: relative;
-  margin: 0 !important;
   width: 50%;
-  display: block;
-  float: left;
-  box-sizing: border-box;
-  background: #333333;
-}
-#work .gallery-item img {
-  width: auto;
-  height: auto;
 }
 #work .gallery-info {
-  display: none;
-  position: absolute;
-  text-align: center;
   height: 300px;
-  text-align: center;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 0 10%;
-  margin: auto;
-  z-index: 99;
 }
 #work .gallery-info label {
   font-size: 30px;
@@ -515,23 +522,25 @@ h1 span {
     padding: 0;
     list-style: none;
 }
-.instagram li {
-    float: left;
-    width: 10%;
-    -webkit-transition: opacity 0.05s linear;
-    -moz-transition: opacity 0.05s linear;
-    -ms-transition: opacity 0.05s linear;
-    -o-transition: opacity 0.05s linear;
-    transition: opacity 0.05s linear;
+.instagram .gallery-item {
+  width: 10%;
 }
-.instagram li:hover {
-    opacity: 0.8;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: alpha(opacity=80);
+.instagram .gallery-info {
+  height: 30px;
 }
-.instagram li img {
-    width: 100%;
-    height: auto;
+.instagram .gallery-info a { 
+  color: #fff;
+  font-size: 70%;
+}
+@media (max-width: 767px) {
+  .instagram .gallery-item {
+    width: 20%;
+  }
+}
+@media (max-width: 600px) {
+  .instagram .gallery-info a { 
+    font-size: 50%;
+  }
 }
 
 /** Footer **/

@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Tag(models.Model):
     tag = models.CharField(max_length=256, help_text="Recent media tag")
     semaphore = models.BooleanField(default=False)
@@ -10,9 +11,11 @@ class Tag(models.Model):
     def __unicode__(self):
         return u"%s" % self.tag
 
+
 class Image(models.Model):
     tag = models.ForeignKey(Tag)
     instagram_id = models.CharField(max_length=256, db_index=True)
+    username = models.CharField(max_length=256)
     link = models.URLField()
     thumbnail_url = models.URLField()
     created_date = models.DateTimeField(auto_now_add=True)

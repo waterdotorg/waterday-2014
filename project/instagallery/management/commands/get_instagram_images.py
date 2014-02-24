@@ -52,6 +52,7 @@ class Command(BaseCommand):
                         image = Image(
                             tag=tag,
                             instagram_id=media.id,
+                            username=media.user.username,
                             link=media.link,
                             thumbnail_url=media.images['thumbnail'].url,
                         )

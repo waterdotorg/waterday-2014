@@ -120,16 +120,19 @@
         </div>
     </div>
 
-    <div class="instagram-background">
-        <ul class="instagram clearfix">
-            {% for image in instagram_images %}
-            <li id="{{ image.instagram_id }}" class="instagram-placeholder">
+    <div class="instagram clearfix">
+        {% for image in instagram_images %}
+        <div id="{{ image.instagram_id }}" class="gallery-item">
+            <div class="gallery-info">
+                <div class="action view">
+                    <a target="_blank" href="{{ image.link }}">{{ image.username }}</a>
+                </div>
+            </div>
             <a target="_blank" href="{{ image.link }}">
                 <img class="instagram-image" src="{{ image.thumbnail_url }}" />
             </a>
-            </li>
-            {% endfor %}
-        </ul>
+        </div>
+        {% endfor %}
     </div>
 </div>
 
