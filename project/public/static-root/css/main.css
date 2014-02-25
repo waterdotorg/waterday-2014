@@ -528,6 +528,10 @@ h1 span {
   margin: 0px auto;
   max-width: 1500px;
 }
+#share .divider {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 40px 0;
+}
 
 /** Instagram Images **/
 .instagram {
@@ -577,4 +581,37 @@ h1 span {
 }
 #footer-base-license {
   margin-top: 20px;
+}
+
+/** Misc **/
+.share-links {
+  list-style: none;
+  text-align: center;
+}
+.share-links li {
+    display: inline-block;
+    margin: 0 14px;
+    zoom: 1;
+    *display: inline;
+}
+
+.share-links a {
+    color: #8d8d8d;
+    width: 80px;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.share-links a:hover {
+    color: #555555;
+    text-decoration: none;
+}
+
+.share-links a i {
+    font-size: 54px;
+    display: block;
 }
