@@ -226,6 +226,38 @@ $(document).ready(function() {
 	});
     }
 
+    // SLIDING LINE 
+    function changePos(currPos, expectedPos) {
+	if (currPos > expectedPos) {
+	    var diff = currPos - expectedPos;
+	    var sign = '-=';
+	}
+	else {
+	    var diff = expectedPos - currPos;
+	    var sign = '+=';
+	}
+	var finalPos = sign + diff;
+	return finalPos;
+    }
+
+    $('.navigation li').mouseleave(function() {
+	$('.sliding-line').hide();
+    });
+
+    $('.navigation li').mouseenter(function() {
+	var slidingLine = $('.sliding-line');
+	if (slidingLine.css('display') == 'none') {
+	    slidingLine.show();
+	}
+	var leftPadding = $(this).css('padding-left').replace('px', '');
+	var newPadding = parseFloat(leftPadding);
+	var slidingLine = $('.sliding-line');
+	var currPos = slidingLine.offset().left;
+	var currWidth = $(this).css('width').replace('px', '') - 40;
+	var expectedPos = $(this).offset().left + newPadding;
+	slidingLine.stop().animate({width: currWidth+"px", left: changePos(currPos, expectedPos)}, 600, 'easeOutQuint', function(){});
+    });
+
     // Mobile Nav
     function displayMenu() {
 	if (isMobileMenu) {

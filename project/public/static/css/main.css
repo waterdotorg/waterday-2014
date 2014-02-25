@@ -113,6 +113,18 @@ img {
     padding: 34px 0 20px 20px;
   }
 }
+.sliding-line {
+  position: absolute;
+  left: 0px;
+  width: 80px;
+  margin-left: 15px;
+  height: 10px;
+  background: #63b1e5;
+  display: none;
+}
+#line-bottom {
+  bottom: 0;
+}
 
 /* Mobile Menu */
 .menu-mobile {
