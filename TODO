@@ -4,12 +4,6 @@
 - symlink supervisord/waterday_gunicorn.conf /etc/supervisord/
     - reread and update
 
-- Complete these donation pages
-    - https://contribute.water.org/donate/waterday/
-    - https://contribute.water.org/donate/waterday-goralnick/
-    - https://contribute.water.org/donate/waterday-bramante/
-    - https://contribute.water.org/donate/waterday-heath/
-
 - Video
 
 - Replace grid item FPO images
