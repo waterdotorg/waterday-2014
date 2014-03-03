@@ -18,13 +18,13 @@ img {
   z-index: 999;
 }
 .btn-blue, .btn-blue:visited {
-    border-top: 1px solid rgba(255,255,255,0.6);
-    background-color: #63b1e5;
+  border-top: 1px solid rgba(255,255,255,0.6);
+  background-color: #63b1e5;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: -1px;
-  padding: 12px 24px;
+  padding: 18px 40px;
   text-transform: uppercase;
   white-space: normal;
 
