@@ -1,11 +1,3 @@
-- symlink nginx.conf to /etc/nginx/sites-enabled/
-    - /etc/init.d/nginx reload
-
-- symlink supervisord/waterday_gunicorn.conf /etc/supervisord/
-    - reread and update
-
 - Video
-
-- Replace grid item FPO images
 
 ** Note - need minimum 10 images tagged on instagram to display gallery on homepage
