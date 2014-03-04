@@ -526,9 +526,37 @@ h1 span {
   margin: 0px auto;
   max-width: 1500px;
 }
+#share .share-gallery {
+  padding-bottom: 45px;
+}
+.share-gallery-item {
+  position: relative;
+  margin: 0 !important;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+}
+.share-gallery-item img {
+  width: auto;
+  height: auto;
+}
+.slide-section .content .share-gallery-item p {
+  padding-bottom: 10px;
+}
 #share .divider {
   border-bottom: 1px solid #e5e5e5;
+  display: none;
   margin: 40px 0;
+}
+@media (max-width: 767px) {
+  .share-gallery-item {
+    float: none;
+    width: 100%;
+  }
+  #share .divider {
+    display: block;
+  }
 }
 
 /** Instagram Images **/
