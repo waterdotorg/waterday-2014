@@ -23,7 +23,6 @@ img {
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: -1px;
   padding: 18px 40px;
   text-transform: uppercase;
   white-space: normal;
@@ -441,6 +440,11 @@ h1 span {
 }
 
 /** WD 2 **/
+@media (min-width: 730px) {
+  #about {
+    padding-top: 120px;
+  }
+}
 #main-donate {
   margin-top: 5px;
 }
