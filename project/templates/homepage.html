@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
+{% block head_extra %}
+    <meta property="og:title" content="Water Day"/>
+    <meta property="og:image" content="http://www.waterday.org/static/img/wd1-bg.jpg"/>
+    <meta property="og:url" content="http://www.waterday.org/"/>
+    <meta property="og:site_name" content="Water Day"/>
+    <meta property="fb:app_id" content="179415965430010"/>
+{% endblock %}
+
 {% block menu_upper %}
     <div id="overlay"></div>
     <div id="video-container"></div>
