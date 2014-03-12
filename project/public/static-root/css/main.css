@@ -334,11 +334,6 @@ img {
   -moz-background-size: cover;
   padding: 0;
 }
-@media (max-width: 767px) {
-  #wd1 {
-    background-attachment: scroll !important;
-  }
-}
 @media (max-width: 480px) {
   #wd1 {
     background: #fff url('../img/wd1-bg-mobile.jpg') no-repeat 50% 0;
@@ -348,6 +343,9 @@ img {
     -o-background-size: cover;
     -moz-background-size: cover;
   }
+}
+body.ismobile #wd1 {
+  background-attachment: scroll !important;
 }
 .on-center {
   position: absolute;
